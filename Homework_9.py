@@ -70,6 +70,9 @@ for item in items:
     driver.close()
     driver.switch_to.window(driver.window_handles[0])
 
+
+
+
     if sorted(list_zones) == list_zones:
         print('Зоны', item.text, 'идут по алфавиту')
     else:
