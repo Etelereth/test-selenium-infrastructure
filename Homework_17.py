@@ -14,6 +14,7 @@ except Exception as e:
     print('Что-то пошло не так', e)
     driver.quit()
 
+
 driver.get("http://litecart.stqa.ru/admin/?app=catalog&doc=catalog&category_id=1&query=Duck")
 items = driver.find_elements_by_partial_link_text('Duck')
 links = []
